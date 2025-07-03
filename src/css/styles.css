@@ -1,0 +1,86 @@
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(16, 35, 28, 0.9);
+  animation: fadeIn 0.3s;
+}
+
+.modal.show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #17352b;
+  margin: auto;
+  border-radius: 8px;
+  border: 1px solid #2f6a55;
+  width: 100%;
+  max-width: 512px;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.25);
+  animation: slideDown 0.3s;
+}
+
+.modal-header {
+  position: relative;
+  border-bottom: 1px solid #2f6a55;
+}
+
+.close {
+  position: absolute;
+  color: #8ecdb7;
+  top: 15px;
+  right: 15px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #019863;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Task Item Styles */
+.task-item {
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.task-item:hover {
+  background-color: #17352b;
+}
+
+/* Hide/Show utility */
+.hidden {
+  display: none !important;
+}
