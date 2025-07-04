@@ -3,14 +3,22 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "es-dev-server --watch",
-    "build": "es-dev-server --build"
+    "start": "webpack serve --mode development --open",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "webpack serve --mode development --open"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
     "lit": "^3.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.28.0",
+    "@babel/preset-env": "^7.28.0",
+    "babel-loader": "^10.0.0",
+    "css-loader": "^6.7.3",
+    "html-webpack-plugin": "^5.6.3",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.2"
   }
 }
