@@ -70,4 +70,4 @@ npm run serve
  http://localhost:8000
 ```
 ## Vista previa
-![](./img/image.png)
+![](./img/image2.png)
