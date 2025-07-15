@@ -1,39 +1,14 @@
+<!-- src/index.html -->
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Laboratorio 1 Jennifer Torres</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <script type="module" src="./src/index.js"></script>
-</head>
-<body>
-    <espe-header id="header"></espe-header>
-    <div class="app-container">
-        <div class="layout-container">
-            <div class="content-wrapper">
-                <div class="layout-content-container">
-                    <div class="title-section">
-                        <p class="page-title">Mis Tareas</p>
-                    </div>
-                    <div class="tabs-section">
-                        <div class="tabs-container">
-                            <a class="tab active" href="#" id="tab-fecha">
-                                <p class="tab-text">Por Fecha</p>
-                            </a>
-                            <a class="tab" href="#" id="tab-prioridad">
-                                <p class="tab-text">Por Prioridad</p>
-                            </a>
-                        </div>
-                        <hr />
-                    </div>
-                    <espe-list id="espeList" theme="dark"></espe-list>
-                    <espe-form id="espeForm"></espe-form>
-                    <espe-detail id="espeDetail"></espe-detail>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
+    <title>Carreras ESPE</title>
+    <script type="module" src="./index.js"></script>
+  </head>
+  <body>
+    <h1>Carreras de la ESPE</h1>
+    <career-selector></career-selector>
+    <career-card></career-card>
+  </body>
 </html>
